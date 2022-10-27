@@ -3,7 +3,7 @@ const btn = document.getElementById('btn');
 btn.addEventListener('click', generateAdvice);
 
 function generateAdvice() {
-    console.log('click');
+    // console.log('click');
   const xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://api.adviceslip.com/advice', true);
 
