@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 19%, 24%);
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5{
+    color: hsl(150, 100%, 66%);
+}
+
+p{
+    color: hsl(193, 38%, 86%);
+}
+
+.container{
+    background-color: hsl(220, 18%, 33%);
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile-image{
+    display: none;
+}
+
+.desktop-image{
+    width: 100%;
+}
+
+.dice-container{
+    bottom: 0;
+    background-color: hsl(150, 100%, 66%);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+}
+
+.dice-container:hover{
+    box-shadow: 0px 0px 6px 2px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 500px) {
+   .mobile-image{
+        display: flex;
+   }
+
+   .desktop-image{
+    display: none;
+   }
+
+   .container{
+    width: 90%;
+    height: 330px;
+    margin-top: 150px;
+   }
+
+   p{
+    font-size: 25px;
+   }
+
+   .dice-container{
+    padding: 20px;
+    margin-bottom: -60px;
+   }
+}
