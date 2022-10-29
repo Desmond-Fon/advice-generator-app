@@ -28,7 +28,10 @@ btn.addEventListener('click', generateAdvice);
 function generateAdvice() { 
 
   fetch('https://api.adviceslip.com/advice')
-  .then(res => res.json())
+  .then(res => {
+    if(!res.ok) throw new Error(`Something went wrong. ${res.status} ${res.statusText}`)
+    return res.json()
+  })
    .then(data => {
     // console.log(data);
       const adviceText = document.getElementById('advice');
@@ -39,3 +42,5 @@ function generateAdvice() {
    .catch(err => console.log(err));
 
 }
+
+document.addEventListener("DOMContentLoaded", generateAdvice);

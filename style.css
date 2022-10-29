@@ -73,8 +73,9 @@ p{
 
    .container{
     width: 90%;
-    height: 330px;
-    margin-top: 50px;
+    height: 50%;
+    margin-top: 100px;
+    gap: 20px;
    }
 
    p{
